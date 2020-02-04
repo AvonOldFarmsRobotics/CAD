@@ -2,7 +2,8 @@
 
 echo "Commit Message:"
 
-read varname
+IFS=""
+IFS= read -r varname
 
 git add --all
 git commit -m $varname
